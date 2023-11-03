@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Minecraft 서버의 주소와 포트를 설정합니다.
-    const serverAddress = 'mcu.skhidc.kr';
+    const serverAddress = '218.232.210.31';
     const serverPort = 25565;
 
     // Minecraft 서버 상태를 확인하는 함수
