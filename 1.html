@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우당탕탕 마인크래프트 놀이터</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <nav>
+        <a id="title" href="./index.html">우당탕탕 마인크래프트 놀이터</a>
+        <ul>
+            <li><a href="#">User</a></li>
+            <li><a href="#">Map</a></li>
+        </ul>
+    </nav>
+
+    <div id="status">
+        <hr>
+        <h1>Minecraft Server Status</h1>
+        <p id="status"></p>
+        <script>
+            function getServerStatus() {
+                // 마인크래프트 서버에 연결합니다.
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "mineplanet.kr/status");
+                xhr.onload = function() {
+                    // 서버 상태를 확인합니다.
+                    if (xhr.status === 200) {
+                        // 서버가 온라인입니다.
+                        document.getElementById("status").innerHTML = "Online";
+                    } else {
+                        // 서버가 오프라인입니다.
+                        document.getElementById("status").innerHTML = "Offline";
+                    }
+                };
+                xhr.send();
+            }
+            getServerStatus();
+        </script>
+    </div>
+</body>
+</html>

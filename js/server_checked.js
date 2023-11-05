@@ -9,10 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 const statusElement = document.getElementById('status');
+                const containerElement = document.getElementById('server_checked');
                 if (data.online) {
                     statusElement.textContent = `서버가 온라인 상태입니다. 플레이어 수: ${data.players.online}/${data.players.max}`;
+                    // containerElement.style.backgroundColor = '#22E625';;
+                    statusElement.style.color = '#22E625';
                 } else {
                     statusElement.textContent = '서버가 오프라인 상태입니다.';
+                    // containerElement.style.backgroundColor = 'red';;
+                    statusElement.style.color = '#E53C20';
                 }
             })
             .catch(error => {
