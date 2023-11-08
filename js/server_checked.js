@@ -13,10 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     // statusElement.textContent =`${data.players.online}`;
                     statusElement.style.backgroundColor = '#22E625';
                     statusElement.style.color = '#FFFFFF';
-                    statusElement.style.width = '100px';
-                    statusElement.style.height = '100px';
-                    statusElement.style.margin = '0';
-                    statusElement.style.padding = '0';
                 } else {
                     // statusElement.textContent = '서버가 오프라인 상태입니다.';
                     statusElement.style.backgroundColor = 'red';
