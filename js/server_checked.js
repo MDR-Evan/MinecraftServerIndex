@@ -12,11 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (data.online) {
                     // statusElement.textContent =`${data.players.online}`;
                     statusElement.style.backgroundColor = '#22E625';
-                    statusElement.style.color = '#FFFFFF';
                 } else {
                     // statusElement.textContent = '서버가 오프라인 상태입니다.';
                     statusElement.style.backgroundColor = 'red';
-                    statusElement.style.color = '#E53C20';
                 }
             })
             .catch(error => {
