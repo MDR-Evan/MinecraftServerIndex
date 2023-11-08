@@ -9,14 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 const statusElement = document.getElementById('status');
-                const containerElement = document.querySelector('nav li div');
                 if (data.online) {
                     // statusElement.textContent =`${data.players.online}`;
-                    containerElement.style.backgroundColor = '#22E625';;
+                    statusElement.style.backgroundColor = '#22E625';
                     statusElement.style.color = '#FFFFFF';
+                    statusElement.style.width = '100px';
+                    statusElement.style.height = '100px';
+                    statusElement.style.margin = '0';
+                    statusElement.style.padding = '0';
                 } else {
                     // statusElement.textContent = '서버가 오프라인 상태입니다.';
-                    containerElement.style.backgroundColor = 'red';;
+                    statusElement.style.backgroundColor = 'red';
                     statusElement.style.color = '#E53C20';
                 }
             })
