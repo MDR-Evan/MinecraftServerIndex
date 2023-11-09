@@ -12,44 +12,57 @@ a:visited {color: #fff}
 a:hover {color: #fff;}
 a:active {color: #fff;}
 
-#nav {
+/* Header START */
+.menu {
     display: flex;
     position: fixed;
     background-color: #333;
-    top: 0;
-    left: 0;
-    right: 0;
     padding: 10px;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
     z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+}
+/* Logo */
+.menu .logo {
+    display: inline-block;
+    float: left;
 }
 
-#nav #logo {
-    display: inline-block;
-    font-size: 25px;
+.menu .logo a {
+    font-size: 50px;
     font-weight: 800px;
     padding: 5px;
     transition: .2 color;
     color: rgb(255,255,255);
 }
-
-#nav ul {
+/* Menu Tab */
+.menu .tab {
+    display: flex;
     display: inline-block;
-    list-style: none;
+    justify-content: flex-end;
 }
 
-#nav ul li {
+.menu .tab li {
     display: inline-block;
+    float: left;
 }
 
-#nav ul li a {
+.menu .tab li a {
+    text-align: center;
     display: inline-block;
     font-size: 17px;
     padding: 10px 20px;
     background-color: #444;
-    border-radius: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+    transition: .2s background-color;
 }
 
-#nav a:hover {
+.tab a:hover {
     color: rgb(200, 200, 200);
 }
+/* Header END */
