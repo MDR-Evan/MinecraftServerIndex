@@ -12,19 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (data.online) {
                     // statusElement.textContent =`${data.players.online}`;
                     statusElement.style.backgroundColor = '#22E625';
-                    statusElement.style.color = '#FFFFFF';
-                    statusElement.style.width = '100px';
-                    statusElement.style.height = '100px';
-                    statusElement.style.margin = '0';
-                    statusElement.style.padding = '0';
+                    statusElement.style.borderRadius = "10px";
+                    statusElement.style.padding = "15px 15px";
                 } else {
                     // statusElement.textContent = '서버가 오프라인 상태입니다.';
                     statusElement.style.backgroundColor = 'red';
-                    statusElement.style.color = '#E53C20';
-                    statusElement.style.width = '10px';
-                    statusElement.style.height = '10px';
-                    statusElement.style.margin = '0';
-                    statusElement.style.padding = '0';
+                    statusElement.style.borderRadius = "10px";
+                    statusElement.style.padding = "15px 15px";
                 }
             })
             .catch(error => {

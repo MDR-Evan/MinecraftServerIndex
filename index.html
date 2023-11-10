@@ -4,31 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft 서버 상태 확인</title>
-    <style>
-        @import url(/css/main.css);
-    </style>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <div class="menu">
-        <div class="logo">
-            <a href="/">우당탕탕 마크서버</a>
-        </div>    
-        <nav class="tab">
-            <ul>
-                <li><a href="#">MAP</a></li>
-                <li><a href="#">USERS</a></li>
-                <li><a href="#">CHATING</a></li>
-                <!-- 서버 온라인 유무 -->
-                <li>
-                    <div id="icon_1">
-                        <div id="status">
-                            <script src="js/server_checked.js"></script>
-                        </div>
-                    </div>
-                </li>
-                <!-- 서버 온라인 유무 -->
-            </ul>
-        </nav>
-    </div>
+    <nav id="Top">
+        <a href="/" id="logo">우당탕탕 마크서버</a>
+        <ul id="list_ul">
+            <li><a href="#">MAP</a></li>
+            <li><a href="#">USERS</a></li>
+            <li><a href="#">CHATING</a></li>
+            <!-- 서버 온라인 유무 -->
+            <li id="status_bg" style="padding: 5px 5px;">
+                <div id="status">
+                    <script src="js/server_checked.js"></script>
+                </div>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
