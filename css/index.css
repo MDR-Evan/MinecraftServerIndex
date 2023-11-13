@@ -19,10 +19,10 @@ a:active {color: #fff}
 
 ul {
     list-style: none;
+    display: flex;
 }
 
 nav {
-    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +33,7 @@ nav {
     z-index: 99;
 }
 
-nav > a#title {
+div > a#title {
     flex: 0.5;
     font-size: 25px;
     padding: 5px;
@@ -43,20 +43,20 @@ nav > a#title {
     color: rgb(255,255,255);
 }
 
-nav > a:hover {
+div > a:hover {
     color: rgb(200,200,200);
 }
 
-nav ul {
-    display: inline-block;
+#logo {
+    float: left;
 }
 
-nav li {
-    display: inline-block;
+#list_ul {
+    float: right;
 }
 
-nav li a {
-    display: inline-block;
+#list_ul a , #status_bg{
+    display: flex;
     font-size: 17px;
     padding: 10px 20px;
     background-color: #444;
@@ -66,10 +66,10 @@ nav li a {
     transition: .2s background-color;
 }
 
-nav li a:hover {
+#list_ul a:hover {
     background-color: #666;
 }
 
-nav li.active a {
+#list_ul.active a {
     background-color: #666;
 }
