@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
-    // checkServerStatus(); // 페이지 접속 할 떄 1회성 확인 
+    checkServerStatus(); // 페이지 접속 할 떄 1회성 확인 
     // 정기적으로 서버 상태를 확인합니다.
-    setInterval(checkServerStatus, 5000); // 5초마다 확인합니다. 필요에 따라 변경하세요. (1000 = 1s)
+    // setInterval(checkServerStatus, 5000); // 5초마다 확인합니다. 필요에 따라 변경하세요. (1000 = 1s)
 
     checkButton.addEventListener('click', function() {
         checkServerStatus(); // 서버 상태 확인 함수 호출
