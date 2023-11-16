@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         wrapper.classList.add("hide");
                     }
 
-                    // setTimeout(() => {
-                    //     wrapper.classList.add("hide");
-                    // }, 10000);
+                    setTimeout(() => {
+                        wrapper.classList.add("hide");
+                    }, 5000);
                 } else {
                     toast.classList.add("offline");
                     toast.classList.remove("online");
@@ -48,9 +48,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         wrapper.classList.add("hide");
                     }
 
-                    // setTimeout(() => {
-                    //     wrapper.classList.add("hide");
-                    // }, 10000);
+                    setTimeout(() => {
+                        wrapper.classList.add("hide");
+                    }, 5000);
                 }
             })
             .catch(error => {
