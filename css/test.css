@@ -11,10 +11,41 @@ body{
 
 #wrapper{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 80%;
+    left: 20px;
+    animation: show_toast 1s ease forwards;
 }
+
+@keyframes show_toast{
+    0%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(10%);
+    }
+    80%, 100%{
+        transform: translateX(20px);
+    }
+}
+
+#wrapper.hide{
+    animation: hide_toast 1s ease forwards;
+}
+
+@keyframes hide_toast{
+    0%{
+        transform: translateX(20px);
+    }
+    40%{
+        transform: translateX(10%);
+    }
+    80%, 100%{
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(-100%);
+    }
+}
+
 #wrapper #toast{
     background: #fff;
     padding: 20px 15px 20px 20px;
@@ -22,7 +53,7 @@ body{
     width: 430px;
     display: flex;
     align-items: center;
-    border-left: 5px solid #2ecc71;
+    border-left: 5px solid #888888;
     justify-content: space-between;
     box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
 }
@@ -38,7 +69,7 @@ body{
 
 #toast #content #icon{
     font-size: 25px;
-    background: #2ecc71;
+    background: #888888;
     height: 50px;
     width: 50px;
     line-height: 50px;
@@ -48,7 +79,7 @@ body{
 }
 
 #toast.offline #content #icon{
-    background: #ccc;
+    background: #e74c3c;
 }
 
 #toast #content #details{
