@@ -20,7 +20,7 @@ hr{
     position: relative;
     width: 400px;
     height: 70px;
-    background: linear-gradient(45deg, #dd2, #e91e63);
+    /* background: linear-gradient(45deg, #dd2, #e91e63); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +94,8 @@ hr{
     top: 55%;
     width: 70px;
     height: 70px;
-    background: linear-gradient(45deg, #dd2, #e91e63);
+    /* background: linear-gradient(45deg, #dd2, #e91e63); */
+    background-color: #2e75cc;
     border: 6px solid #06021b;
     border-radius: 50%;
     display: flex;
