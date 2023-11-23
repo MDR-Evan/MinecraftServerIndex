@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 const statusElement = document.getElementById('status'); // 수정된 부분: statusElements -> statusElement
                 if (data.online) {
-                    statusElement.textContent =`${data.players.online} / ${data.players.max}`;
+                    statusElement.textContent =`${data.players.online}명의 유저가 접속 중 입니다.`;
+                    //  / ${data.players.max}
+                    statusElement.style.color = '#fff'
                     statusElement.style.display = 'grid';
                     statusElement.style.placeContent = 'center';  
                     statusElement.style.textAlign = 'center';
