@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Minecraft 서버의 주소와 포트를 설정합니다.
     const serverAddress = '218.232.210.31';
     const serverPort = 25565;
-    // const serverAddress = 'pixel.agpk.kr';
 
     const checkButton = document.getElementById('checkButton'); // 예시: HTML에서 버튼의 ID를 'checkButton'으로 가정
     // 팝업창
