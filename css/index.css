@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: hangle_dot;
-    src: url(/ksm/font/neodgm.woff);
+    src: url(/font/neodgm.woff);
   }
 
 * {
@@ -14,6 +14,7 @@
 
 body{
     background-color: #06021b;
+    overflow-x: hidden;
 }
 
 hr{
@@ -63,19 +64,19 @@ hr{
     position: relative;
     display: block;
     line-height: 75px;
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: center;
     color: #fff;
     transition: .5s;
 }
 .navigation ul li.active a .icon {
-    transform: translateY(40px);
+    transform: translateY(43px);
 }
 .navigation ul li a .text {
     position: absolute;
     color: #fff;
     font-weight: 400;
-    font-size: .75em;
+    font-size: 1.5em;
     letter-spacing: .05em;
     opacity: 0;
     transform: translateY(10px);

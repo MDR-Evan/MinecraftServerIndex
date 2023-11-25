@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     toast.classList.remove("online");
                     wrapper.classList.remove("hide");
                     title.innerText = "Server Offline";
-                    subTitle.innerText = "오정민 데려와ㅏㅏㅏ";
+                    subTitle.innerText = "서버 문의 : 010-8969-3821 오정민";
                     on_icon.innerHTML = '<i class="fa-solid fa-toggle-off"></i>';
                     toast.style.borderLeft = "5px solid #e74c3c";
 

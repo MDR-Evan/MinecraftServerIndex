@@ -1,0 +1,117 @@
+@font-face {
+    font-family: hangle_dot;
+    src: url(/font/neodgm.woff);
+}
+
+#top_tab .slide{
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    left: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+    transform: translateX(0);
+}
+
+#top_tab h1{
+    color: #de4f55;
+    font-weight: 800;
+    text-align: center;
+    padding: 10px 0;
+    /* padding-left: 30px; */
+    pointer-events: none;
+    font-family: 'hangle_dot';
+}
+
+#top_tab ul li{
+    list-style: none;
+}
+
+#top_tab ul li a{
+    color: #de4f55;
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    transform: 0.2s ease-out;
+    font-family: 'hangle_dot';
+}
+
+#top_tab ul li:hover a{
+    color: #fff;
+    background-color: #de4f55;
+}
+
+#top_tab input{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+#top_tab .toggle{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    right: 15px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+
+#top_tab .toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    transform: 0.3s ease;
+}
+
+#top_tab .toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#top_tab .toggle .middle_line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#top_tab .toggle .bottom_line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#top_tab input:hover ~ .toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+    background-color: #000;
+    opacity: 0;
+}
+
+#top_tab input:hover ~ .toggle .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+    background-color: #000;
+    opacity: 0;
+}
+#top_tab input:hover ~ .toggle .middle_line{
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#top_tab input:hover ~ .slide{
+    transform: translateX(-200px);
+}
