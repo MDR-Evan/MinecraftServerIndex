@@ -8,17 +8,19 @@
     width: 200px;
     position: absolute;
     left: 100%;
-    background-color: #fff;
+    background-color: #F5F5F5;
     box-sizing: border-box;
     transition: 0.5s ease;
     transform: translateX(0);
 }
 
 #top_tab h1{
-    color: #de4f55;
+    color: #f5f5f5;
+    background-color: #F99417;
     font-weight: 800;
     text-align: center;
     padding: 10px 0;
+    font-size: 60px;
     /* padding-left: 30px; */
     pointer-events: none;
     font-family: 'hangle_dot';
@@ -29,7 +31,7 @@
 }
 
 #top_tab ul li a{
-    color: #de4f55;
+    color: #F99417;
     font-weight: 500;
     padding: 5px 0;
     display: block;
@@ -38,11 +40,12 @@
     text-align: center;
     transform: 0.2s ease-out;
     font-family: 'hangle_dot';
+    font-size: 30px;
 }
 
 #top_tab ul li:hover a{
     color: #fff;
-    background-color: #de4f55;
+    background-color: #F99417;
 }
 
 #top_tab input{

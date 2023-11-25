@@ -1,6 +1,6 @@
 /*****************************************************************/
 #wrapper{
-    position: absolute;
+    position: fixed;
     top: 80%;
     left: 20px;
     animation: show_toast 1s ease forwards;

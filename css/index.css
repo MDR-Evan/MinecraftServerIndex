@@ -13,8 +13,9 @@
 }
 
 body{
-    background-color: #06021b;
+    background-color: #363062;
     overflow-x: hidden;
+    height: 10000px;
 }
 
 hr{
@@ -26,7 +27,7 @@ hr{
     align-items: flex-start;
     width: auto;
     height: 70px;
-    background: #06021b;
+    background: #363062;
 }
 .navigation { /*컨텐츠 감싸는 요소*/
     position: relative;
@@ -103,19 +104,19 @@ hr{
 }
 .indicator {
     position: absolute;
-    top: 55%;
+    top: 57.5%;
     width: 70px;
     height: 70px;
     /* background: linear-gradient(45deg, #dd2, #e91e63); */
-    background-color: #2e75cc;
-    border: 6px solid #06021b;
+    background-color: #F99417;
+    border: 6px solid #363062;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .5s;
 }
-.indicator::before {
+/* .indicator::before {
     content: '';
     position: absolute;
     bottom: 56%;
@@ -124,7 +125,7 @@ hr{
     height: 20px;
     background: transparent;
     border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 #06021b;
+    box-shadow: 1px -10px 0 #363062;
     transform: rotate(180deg);
 }
 .indicator::after {
@@ -136,9 +137,9 @@ hr{
     height: 20px;
     background: transparent;
     border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 #06021b;
+    box-shadow: -1px -10px 0 #363062;
     transform: rotate(180deg);
-}
+} */
 .navigation ul li:nth-child(1).active~.indicator {
     transform: translateX(calc(70px * 0));
 }
@@ -207,7 +208,7 @@ hr{
 }
 /* ------------------------------------------------------------------------------------------------------ */
 .user_ckecked{
-    background-color: #06021b;
+    background-color: #4D4C7D;
     width: 100%;
     height: 50px;
     margin: 0;
@@ -227,13 +228,21 @@ hr{
     display: inline-block;
     font-size: 25px;
     font-weight: 600;
-    margin-top: 5px;
+    margin-top: 10px;
     transition: .2s background-color;
     color: #fff;
 }
 /************************************************************************************/
+main{
+    margin: 0;
+    padding: 0;
+}
+
 .content1{
-    margin: 10% 5%;
+    margin: 5% 5%;
+    background-color: #4D4C7D;
+    border-radius: 20px;
+    height: 120px;
 }
 
 .content1 .content_title{
@@ -242,12 +251,12 @@ hr{
     font-weight: bold;
     font-family: 'hangle_dot';
     font-variant: small-caps;
-    padding: 5px 15px;
+    padding: 10px 20px;
     text-shadow: 3px 3px 5px #000;
 }
 
 .content1 .content_title span{
-    color: #d59295;
+    color: #F99417;
     font-family: 'hangle_dot';
     text-shadow: 3px 3px 5px #000;
 }
@@ -263,14 +272,24 @@ hr{
 
 .content1 .substance span{
     font-size: 25px;
-    color: #d3d2d4;
+    color: #F99417;
     font-family: 'hangle_dot';
 }
 
 /***********************************************************************************************/
 footer{
-    background-color: #06021b;
+    bottom: 100%;
+    padding: 15px;
+    background-color: #4D4C7D;
     width: 100%;
-    height: 100px;
+    height: 120px;
     color: #fff;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    margin: 5px 0;
 }
