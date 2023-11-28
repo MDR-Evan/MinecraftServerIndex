@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft 서버 상태 확인</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/cicle.css">
+    <link rel="stylesheet" href="./css/test.css">
+    <script src="https://kit.fontawesome.com/b0ee497627.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="menu">
+        <a href="/" id="logo"><h1>우당탕탕 마크서버</h1></a>
+        <ul id="tab">
+            <li><a href="#">MAP</a></li>
+            <li><a href="#">USERS</a></li>
+            <li><a href="#">CHATING</a></li>
+            <!-- 서버 온라인 유무 -->
+            <li id="status_bg" style="padding: 5px 5px;">
+                <div id="status">
+                    <p>로딩중...</p>
+                    <script src="js/server_checked.js"></script>
+                    <!-- <script src="js/test.js"></script> -->
+                </div>
+            </li>
+            <li>
+                
+            </li>
+        </ul>
+    </nav>
+    <!-- 서버 on/offline 구분 팝업 -->
+    <div id="wrapper">
+        <div id="toast">
+            <div id="content">
+                <div id="icon"><i class="fa-solid fa-spinner"></i></div>
+                <div id="details">
+                    <span>Loading...</span>
+                    <p></p>
+                    <script src="/js/test.js"></script>
+                </div>
+            </div>
+            <div id="close-icon"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+    </div>
+    <!-- 서버 on/offline 구분 팝업 -->
+    <div>
+        <button id="checkButton">서버 상태 확인하기</button>
+    </div>
+</body>
+</html>
