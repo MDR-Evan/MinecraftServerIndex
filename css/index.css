@@ -13,7 +13,7 @@
 }
 
 body{
-    background-color: #363062;
+    background-color: #61371F;
     overflow-x: hidden;
     height: 10000px;
 }
@@ -27,7 +27,8 @@ hr{
     align-items: flex-start;
     width: auto;
     height: 70px;
-    background: #363062;
+    background: #3e5c20;
+    background-image : url("/img/background-top.jpg") ;
 }
 .navigation { /*컨텐츠 감싸는 요소*/
     position: relative;
@@ -64,7 +65,7 @@ hr{
 .navigation ul li a .icon {
     position: relative;
     display: block;
-    line-height: 75px;
+    line-height: 77px;
     font-size: 1.25em;
     text-align: center;
     color: #fff;
@@ -108,8 +109,8 @@ hr{
     width: 70px;
     height: 70px;
     /* background: linear-gradient(45deg, #dd2, #e91e63); */
-    background-color: #F99417;
-    border: 6px solid #363062;
+    background-color: #926c4d;
+    border: 6px solid #3e5c20;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -208,7 +209,9 @@ hr{
 }
 /* ------------------------------------------------------------------------------------------------------ */
 .user_ckecked{
-    background-color: #4D4C7D;
+    background-color: #838587;
+    /* background-color: #3e5c20; */
+    /* background-color: #926c4d; */
     width: 100%;
     height: 50px;
     margin: 0;
@@ -226,11 +229,12 @@ hr{
 #status p {
     text-align: center;
     display: inline-block;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 12px;
     transition: .2s background-color;
     color: #fff;
+    text-stroke: 1px solid #fff;
 }
 /************************************************************************************/
 main{
@@ -240,7 +244,7 @@ main{
 
 .content1{
     margin: 5% 5%;
-    background-color: #4D4C7D;
+    background-color: #714F36;
     border-radius: 20px;
     height: 120px;
 }
@@ -280,7 +284,7 @@ main{
 footer{
     bottom: 100%;
     padding: 15px;
-    background-color: #4D4C7D;
+    background-color: #714F36;
     width: 100%;
     height: 120px;
     color: #fff;

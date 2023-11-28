@@ -1,0 +1,27 @@
+#grass{
+    position: relative;
+}
+.grass1{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    top: 0px;
+    /* left: 99%; */
+}
+.grass2{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #2f2f2f;
+    top: 28px;
+    /* left: 99%; */
+}
+.grass3{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #61371F;
+    top: 56px;
+    /* left: 99%; */
+}

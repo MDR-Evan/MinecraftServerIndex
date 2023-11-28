@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     statusElement.style.display = 'grid';
                     statusElement.style.placeContent = 'center';  
                     statusElement.style.textAlign = 'center';
+                    statusElement.style.webkitTextStroke = '1px solid #fff';
                 } 
                 // else {
                 //     statusElement.textContent =`${data.players.online}`;
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // }
                 else {
                     statusElement.textContent = '금일 영업은 종료하였습니다.';
-                    statusElement.style.color = '#E53C20';
+                    statusElement.style.color = '#000';
                     statusElement.style.display = 'grid';
                     statusElement.style.placeContent = 'center';    
                     statusElement.style.textAlign = 'center';
