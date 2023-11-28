@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic Navigation Menu Indicator | Codehal</title>
     <style>
-        @import url(/css/style.css);
-        @import url(/css/test.css);
+        @import url(/stylesheet/style.css);
     </style>
-    <script src="https://kit.fontawesome.com/b0ee497627.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -53,7 +51,7 @@
                         </a>
                     </li>
                     <li class="list">
-                        <a id="checkButton">
+                        <a href="#">
                             <span class="icon">
                                 <ion-icon name="settings-outline"></ion-icon>
                             </span>
@@ -68,10 +66,11 @@
 
         <div id="login">
             <a href="#">Login</a>
+            <hr>
         </div>
 
         <div id="title">
-            <img src="/img/title.png" alt="title">
+            <img src="/img/minecraft_title.png" alt="">
         </div>
 
         <div id="online">
@@ -101,25 +100,11 @@
             <p>메뉴바? 하나더?
             </p>
         </div>
-        <!-- 서버 on/offline 구분 팝업 -->
-    <div id="wrapper">
-        <div id="toast">
-            <div id="content">
-                <div id="icon"><i class="fa-solid fa-spinner"></i></div>
-                <div id="details">
-                    <span>Loading...</span>
-                    <p></p>
-                    <script src="/js/test.js"></script>
-                </div>
-            </div>
-            <div id="close-icon"><i class="fa-solid fa-xmark"></i></div>
-        </div>
-    </div>
-    <!-- 서버 on/offline 구분 팝업 -->
     </main>
     <footer>
         <div>
             연락처, 이메일 등등
+            
         </div>
     </footer>
 
@@ -127,6 +112,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="/JS/script.js"></script>
 </body>
 </html>

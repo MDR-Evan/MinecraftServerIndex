@@ -5,27 +5,24 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-hr{
-    color:#fff
-}
 #top_menu {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: auto;
-    height: 70px;
+    height: 150px;
     background: #06021b;
 }
 .navigation { /*컨텐츠 감싸는 요소*/
     position: relative;
     width: 400px;
     height: 70px;
-    background: linear-gradient(45deg, #dd2, #e91e63);
+    background: linear-gradient(45deg, #2196f3, #e91e63);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    margin: -10px 0;
+    margin-top: 50px;
 }
 .navigation ul {
     display: flex;
@@ -58,7 +55,7 @@ hr{
     transition: .5s;
 }
 .navigation ul li.active a .icon {
-    transform: translateY(40px);
+    transform: translateY(-32px);
 }
 .navigation ul li a .text {
     position: absolute;
@@ -67,12 +64,12 @@ hr{
     font-size: .75em;
     letter-spacing: .05em;
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(20px);
     transition: .5s;
 }
 .navigation ul li.active a .text {
     opacity: 1;
-    transform: translateY(-10px);
+    transform: translateY(10px);
 }
 .navigation ul li a .circle {
     position: absolute;
@@ -87,14 +84,14 @@ hr{
 .navigation ul li.active a .circle {
     transition: .5s;
     transition-delay: .5s;
-    transform: translateY(37px) scale(1);
+    transform: translateY(-37px) scale(1);
 }
 .indicator {
     position: absolute;
-    top: 55%;
+    top: -50%;
     width: 70px;
     height: 70px;
-    background: linear-gradient(45deg, #dd2, #e91e63);
+    background: linear-gradient(45deg, #2196f3, #e91e63);
     border: 6px solid #06021b;
     border-radius: 50%;
     display: flex;
@@ -105,26 +102,24 @@ hr{
 .indicator::before {
     content: '';
     position: absolute;
-    bottom: 56%;
-    left: 57px;
+    top: 50%;
+    left: -22px;
     width: 20px;
     height: 20px;
     background: transparent;
     border-top-right-radius: 20px;
     box-shadow: 1px -10px 0 #06021b;
-    transform: rotate(180deg);
 }
 .indicator::after {
     content: '';
     position: absolute;
-    bottom: 56%;
-    right: 57px;
+    top: 50%;
+    right: -22px;
     width: 20px;
     height: 20px;
     background: transparent;
     border-top-left-radius: 20px;
     box-shadow: -1px -10px 0 #06021b;
-    transform: rotate(180deg);
 }
 .navigation ul li:nth-child(1).active~.indicator {
     transform: translateX(calc(70px * 0));
@@ -151,44 +146,26 @@ hr{
     font-size: 14px;
     float: right;
 }
-
-#login .hr{
-    position: absolute;
-    height: 1px;
-    top:40px;
-    background-color:rgb(0, 174, 255);
-    width: 100%;
+#login hr{
+    text-decoration: none;
+    color: rgb(255, 72, 0);
+    font-size: 14px;
 }
 /* ---------------------------------------------------------------------- login button end --------------*/
 #title{
     background-image: url(/img/Menu_img.jpg);
     width: 100%;
     height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-#title span{
-    color: #dd2;
-    font-size: 70px;
     display: flex;
-    font-weight: 900;
     justify-content: center;
     align-items: center;
-    height: 50%;
-}
-#title p{
-    color: #dd1;
-    font-size: 50px;
-    display: flex;
-    font-weight: 900;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
+    
 }
 #title img{
-    height: 75%;
+    
+    height: 100px;
+    
 }
