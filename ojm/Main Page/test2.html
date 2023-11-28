@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(/stylesheet/minestyle.css);
+    </style>
+</head>
+<body onload="displayQuote();">
+    <div class="backgroundMainMenu"></div>
+    <audio
+        src="https://vgmdownloads.com/soundtracks/minecraft/yplmcdlu/Volume%20Alpha%20-%2011%20-%20Mice%20on%20Venus.mp3"
+        preload="auto" loop="true" autoplay></audio>
+    <div class="mainMenu">
+        <div class="logo">
+            <div class="subtitle" id="quote" ><span style="font-family: hangle_dot;">로그인하시죠</span>?!</div>
+        </div>
+        <div class="mn1">
+            <a>
+                <div class="mainBtn" onclick="btnMinecraft();">
+                    <div class="textBtn">
+                        <form action="#" method="post"> ID : <input class="inputType" type="text"> </form>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="mainBtn" onclick="btnMinecraft();">
+                    <div class="textBtn">
+                        PassWord : <input class="inputType" type="password">
+                    </div>
+                </div>
+            </a>
+            <!-- <a>
+                <div class="mainBtn" onclick="btnMinecraft();">
+                    <div class="textBtn">Minecraft Realms</div>
+                </div>
+            </a> -->
+        </div>
+        <div class="mn2">
+            <div class="secondBtn" onclick="btnMinecraft();">
+                <div class="textBtn">
+                    <a href="#">
+                        login
+                    </a>
+                </div>
+            </div>
+            <div class="secondBtn" onclick="btnMinecraft();">
+                <div class="textBtn">
+                    <a href="#">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="btnAudioClick" type="audio/mpeg"
+        src="https://cdn.discordapp.com/attachments/639163306749198356/681612670016815134/minecraft_click-AudioTrimmer.com.mp3"></audio>
+</body>
+
+</html>
