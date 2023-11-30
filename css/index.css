@@ -65,7 +65,7 @@ hr{
 .navigation ul li a .icon {
     position: relative;
     display: block;
-    line-height: 77px;
+    line-height: 75px;
     font-size: 1.25em;
     text-align: center;
     color: #fff;
@@ -231,7 +231,7 @@ hr{
     display: inline-block;
     font-size: 26px;
     font-weight: 600;
-    margin-top: 12px;
+    margin-top: 9px;
     transition: .2s background-color;
     color: #fff;
     text-stroke: 1px solid #fff;
