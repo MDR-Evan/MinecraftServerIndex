@@ -13,7 +13,9 @@
 }
 
 body{
-    background-color: #61371F;
+    /* background-color: #61371F; */
+    background-image : url("/img/stone.png") ;
+    background-size: 5%;
     overflow-x: hidden;
     height: 10000px;
 }
@@ -28,7 +30,8 @@ hr{
     width: auto;
     height: 70px;
     background: #3e5c20;
-    background-image : url("/img/background-top.jpg") ;
+    background-image : url("/img/grass_block_side.png") ;
+    background-size: 20%;
 }
 .navigation { /*컨텐츠 감싸는 요소*/
     position: relative;
@@ -158,24 +161,6 @@ hr{
     transform: translateX(calc(70px * 4));
 }
 /* --------------------------------------------------------------------------------- Main munu end ---------------*/
-#login a{
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    text-decoration: none;
-    color: rgb(0, 174, 255);
-    font-size: 14px;
-    float: right;
-}
-
-#login .hr{
-    position: absolute;
-    height: 1px;
-    top:40px;
-    background-color:rgb(0, 174, 255);
-    width: 100%;
-}
-/* ---------------------------------------------------------------------- login button end --------------*/
 #title{
     background-image: url(/img/Menu_img.jpg);
     width: 100%;
@@ -210,9 +195,11 @@ hr{
 }
 /* ------------------------------------------------------------------------------------------------------ */
 .user_ckecked{
-    background-color: #838587;
+    /* background-color: #838587; */
     /* background-color: #3e5c20; */
     /* background-color: #926c4d; */
+    background-image : url("/img/background-top.jpg") ;
+    background-size: 30%;
     width: 100%;
     height: 50px;
     margin: 0;
@@ -246,7 +233,10 @@ main{
 
 .content1{
     margin: 5% 5%;
-    background-color: #714F36;
+    /* background-color: #714F36; */
+    /* background-color: #878787; */
+    background-image : url("/img/cobblestone.jpg") ;
+    background-size: 20%;
     border-radius: 20px;
     height: 120px;
 }
@@ -284,7 +274,8 @@ main{
 
 .content_mode{
     margin: 5% 5%;
-    background-color: #714f36;
+    background-image : url("/img/cobblestone.jpg") ;
+    background-size: 20%;
     border-radius: 20px;
     height: 210px;
 }
