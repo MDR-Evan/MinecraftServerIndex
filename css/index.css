@@ -83,6 +83,7 @@ hr{
     opacity: 0;
     transform: translateY(10px);
     transition: .5s;
+    font-family: 'hangle_dot';
 }
 .navigation ul li.active a .text {
     opacity: 1;
@@ -235,6 +236,7 @@ hr{
     transition: .2s background-color;
     color: #fff;
     text-stroke: 1px solid #fff;
+    font-family: 'hangle_dot';
 }
 /************************************************************************************/
 main{
@@ -302,5 +304,6 @@ footer ul{
 }
 
 footer ul li{
+    font-family: 'hangle_dot';
     margin: 5px 0;
 }

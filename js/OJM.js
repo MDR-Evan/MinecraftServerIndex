@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 const statusElement = document.getElementById('wrapper');
+                title.style.fontFamily='hangle_dot';
+                subTitle.style.fontFamily='hangle_dot';
                 if (data.online) {
                     toast.classList.add("online");
                     toast.classList.remove("offline");

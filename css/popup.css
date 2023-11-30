@@ -84,11 +84,13 @@
 
 #toast #content #details{
     margin-left: 15px;
+    font-family: 'hangle_dot';
 }
 
 #content #details span{
     font-size: 20px;
     font-weight: 500;
+    font-family: 'hangle_dot';
 }
 
 #content #details p{
