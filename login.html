@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @import url(/ojm/stylesheet/minestyle.css);
+        @import url(/css/login.css);
     </style>
 </head>
 <body onload="displayQuote();">
@@ -41,14 +41,21 @@
         <div class="mn2">
             <div class="secondBtn" onclick="btnMinecraft();">
                 <div class="textBtn">
-                    <a href="#">
+                    <a href="#" onclick="btnMinecraft_login()">
                         login
+                        <script>
+                            function btnMinecraft_login() {
+                                var sound = document.getElementById("btnAudioClick");
+                                sound.play();
+                                window.opener.closePopupAndActivateParent();
+                            }
+                        </script>
                     </a>
                 </div>
             </div>
             <div class="secondBtn" onclick="btnMinecraft();">
                 <div class="textBtn">
-                    <a href="#">
+                    <a href="#" onclick="alert('아직 미구현된 시스템입니다.')">
                         Sign Up
                     </a>
                 </div>

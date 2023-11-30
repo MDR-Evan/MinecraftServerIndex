@@ -280,6 +280,13 @@ main{
     font-family: 'hangle_dot';
 }
 
+.content_mode{
+    margin: 5% 5%;
+    background-color: #714f36;
+    border-radius: 20px;
+    height: 210px;
+}
+
 /***********************************************************************************************/
 footer{
     bottom: 100%;

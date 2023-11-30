@@ -16,3 +16,5 @@ function btnMinecraft() {
   var sound = document.getElementById("btnAudioClick");
   sound.play();
 }
+
+
