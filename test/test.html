@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html style="background-color: #2B2D31; color: white;">
+    <head>
+        <title>블루봇</title>
+        <link href="/img/Bluebot.ico" rel="shortcut icon">
+
+        <link rel="stylesheet" href="test.css">
+    </head>
+    <body>
+        <!--------상단-------->
+        <div id="Top">
+            <div class="Logo">
+                <img name="logo_img" src="./img/Bluebot.png" alt="Logo" width="60px" height="60px">
+                <h1 class="Logo_text">블루봇</h1>
+            </div>
+            <div class="Login">
+                <button class="Login_button" type="button">로그인</button>
+            </div>
+        </div>
+
+        <!--------왼쪽 리스트(일반사람들에게는 안보임)-------->
+        <div class="list">
+            <input id="list-1" type="radio" name="body_list" checked>
+            <input id="list-2" type="radio" name="body_list">
+            <input id="list-3" type="radio"  name="body_list">
+            
+        <!--------왼쪽 리스트(일반사람들에게 보임)-------->
+            <div class="Text_list">
+                <label class="left_list" for="list-1"><img src="./img/icon/house-on.png" alt="" width="20px" style="padding-left: 10px; padding-right: 5px; width: 20px; height: 20px;">홈</label>
+                <label class="left_list" for="list-2"><img src="./img/icon/terminal-on.png" alt="" width="20px" style="padding-left: 10px; padding-right: 5px; width: 20px; height: 20px;">명령어</label>
+                <label class="left_list" for="list-3"><img src="./img/icon/gear-on.png" alt="" width="20px" style="padding-left: 10px; padding-right: 5px; width: 20px; height: 20px;">서버설정</label>
+            </div>
+
+        
+        <!--------왼쪽 리스트 내용들-------->
+            <div class="list_pages">
+
+                <!--홈-->
+                <div class="Home"> 
+                    <h1>어쩌구저쩌구 블루봇 어쩌구</h1>
+                </div>
+
+                <!--명령어-->
+                <div class="Command">
+                    <div class="Top_Command">
+                        <h2 class="Top_Command_text h2">블루봇 명령어</h2>
+                        <h4 class="Top_Command_text h4">명령어를 클릭시 해당명령어 설명이나옵니다</h4>
+                    </div>
+                    <div class="Commands">
+                        <div class="Commands_Group">
+                            <div class="Commands_div">
+                                <h4 class="Command_h4">기능</h4>
+                                <li class="Command_li">/타이머</li>
+                                <li class="Command_li">/주사위</li>
+                                <li class="Command_li">/임베드</li>
+                            </div>
+                            <div class="Commands_div">
+                                <h4 class="Command_h4">검색</h4>
+                                <li class="Command_li">/구글</li>
+                                <li class="Command_li">/유튜브</li>
+                            </div>
+                            <div class="Commands_div">
+                                <h4 class="Command_h4">유저</h4>
+                                <li class="Command_li">/프사</li>
+                                <li class="Command_li">/배너</li>
+                                <li class="Command_li">/유저정보</li>
+                            </div>
+                            <div class="Commands_div">
+                                <h4 class="Command_h4">서버</h4>
+                                <li class="Command_li">/서버정보</li>
+                                <li class="Command_li">/서버로고</li>
+                                <li class="Command_li">/서버통계</li>
+                                <li class="Command_li">/초대확인</li>
+                            </div>
+                            <div class="Commands_div">
+                                <h4 class="Command_h4">블루봇</h4>
+                                <li class="Command_li">/핑</li>
+                                <li class="Command_li">/봇초대</li>
+                                <li class="Command_li">/봇정보</li>
+                            </div>
+                        </div>
+                        <div class="Commands_Group">
+                            <div class="Commands_div">
+                                <h4 class="Command_h4">회원</h4>
+                                <li class="Command_li">/돈</li>
+                                <li class="Command_li">/가입</li>
+                                <li class="Command_li">/탈퇴</li>
+                            </div>
+                            <div class="Commands_div">
+                                <h4 class="Command_h4">경쟁</h4>
+                                <li class="Command_li">/출석</li>
+                                <li class="Command_li">/랭킹</li>
+                            </div>
+                            <div class="Commands_div">
+                                <h4 class="Command_h4">게임</h4>
+                                <li class="Command_li">/일</li>
+                                <li class="Command_li">/주식</li>
+                                <li class="Command_li">/블랙잭</li>
+                            </div>
+                        </div>
+                        <div class="Commands_Group">
+                            <h3 class="Command_h3">서버 관리</h3>
+                            <div class="Commands_div">
+                                <h4 class="Command_h4">서버</h4>
+                                <li class="Command_li">/금지어</li>
+                                <li class="Command_li">/가입</li>
+                                <li class="Command_li">/탈퇴</li>
+                            </div>
+                            <div class="Commands_div">
+                                <h4 class="Command_h4">유저</h4>
+                                <li class="Command_li">/출석</li>
+                                <li class="Command_li">/랭킹</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--서버설정-->
+                <div class="Guild_Setting">
+                    <h1>일해라 시바</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

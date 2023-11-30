@@ -1,0 +1,183 @@
+body { 
+    text-align: center;
+    width: 912px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    font-weight: bolder;
+
+    color: white;
+    border: 1px solid white;
+    background-color: #2B2D31;
+}
+
+button:active {
+    background-color: #99ecff94;
+}
+
+/*********************상단 바*********************/
+
+div#Top {
+
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid white;
+}
+
+/**************로고아이콘**************/
+
+.Logo {
+    display: inline-flex;
+    float: left;
+
+    margin-left: 10%;
+}
+
+h1.Logo_text {
+    margin-left: 10px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-top: 10px;
+}
+
+/**************로그인버튼**************/
+
+button.Login_button {
+    width: 120px; /*가로*/
+    height: 40px; /*세로*/
+
+    border-radius: 3px; /*모서리 둥글기*/
+}
+
+
+.Login {
+    text-align: right;
+    padding-top: 10px;
+    margin-right: 10%;
+}
+
+
+
+/*********************리스트 (메인 몸뚱아리)*********************/
+#list-1:checked ~ .list_pages div:nth-child(1),
+#list-2:checked ~ .list_pages div:nth-child(2),
+#list-3:checked ~ .list_pages div:nth-child(3){
+	display: block;
+}
+
+
+/****리스트 위치****/
+
+.Text_list {
+    width: 15%;
+    display: grid;
+    text-align: left;
+
+    font-weight: bolder;
+    float: left;
+}
+
+label.left_list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 3px; /*모서리 둥글기*/
+
+    color: white;
+    border: 1px solid white;
+    background-color: #2B2D31;
+    display: flex;
+}
+
+label.left_list:active {
+    background-color: #99ecff94;
+}
+
+/****버튼 아이콘 제거****/
+.list input[type=radio] {
+	display: none;
+}
+
+/****선택한 리스트가 아닌것들은 가림처리****/
+.list_pages > div {
+	display: none;
+}
+
+.list_pages {
+    width: 80%;
+    display:inline-block;
+
+    margin-top: 3px;
+    padding-bottom: 20px;
+    background-color: #313338;
+    border: 1px solid white;
+}
+
+.icons {
+    display: inline-block;
+    background-image: url(../img/Icons.png);
+    background-size: 500px 375px; /*이미지 크기*/
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 30px;
+}
+
+.icons.Home {
+    background-position: 0px 0px; /*이미지 위치*/
+}
+
+.icons.Command {
+    background-position: -33px 0px; /*이미지 위치*/
+}
+
+.icons.Setting {
+    background-position: -66px 0px; /*이미지 위치*/
+}
+
+
+
+
+/*********************리스트 내용부분*********************/
+
+.Top_Command_text.h4 {
+    padding-bottom: 15px;
+}
+
+.Commands_div {
+    float: left;
+}
+
+.Commands_Group {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.Command_h3 {
+    margin-block-end: -10px;
+}
+
+.Command_h4 {    
+    text-align: left;
+    padding-left: 30px;
+    margin-block-end: 15px;
+}
+
+.Command_li {
+    display: table;
+    width: 100px;
+
+    padding: 5px;
+    margin-left: 30px;
+    border: 1px solid white;
+}

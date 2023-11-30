@@ -160,6 +160,13 @@ hr{
 .navigation ul li:nth-child(5).active~.indicator {
     transform: translateX(calc(70px * 4));
 }
+.navigation ul li:nth-child(1).active~main div:nth-child(1),
+.navigation ul li:nth-child(2).active~main div:nth-child(2),
+.navigation ul li:nth-child(3).active~main div:nth-child(3),
+.navigation ul li:nth-child(4).active~main div:nth-child(4),
+.navigation ul li:nth-child(5).active~main div:nth-child(5) {
+    display: block;
+}
 /* --------------------------------------------------------------------------------- Main munu end ---------------*/
 #title{
     background-image: url(/img/Menu_img.jpg);
@@ -171,24 +178,6 @@ hr{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-#title span{
-    color: #dd2;
-    font-size: 70px;
-    display: flex;
-    font-weight: 900;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-}
-#title p{
-    color: #dd1;
-    font-size: 50px;
-    display: flex;
-    font-weight: 900;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
 }
 #title img{
     height: 75%;
@@ -231,7 +220,7 @@ main{
     padding: 0;
 }
 
-.content1{
+.content_main{
     margin: 5% 5%;
     /* background-color: #714F36; */
     /* background-color: #878787; */
@@ -241,7 +230,7 @@ main{
     height: 120px;
 }
 
-.content1 .content_title{
+.content_main .content_title{
     color: #fff;
     font-size: 50px;
     font-weight: bold;
@@ -251,13 +240,13 @@ main{
     text-shadow: 3px 3px 5px #000;
 }
 
-.content1 .content_title span{
+.content_main .content_title span{
     color: #F99417;
     font-family: 'hangle_dot';
     text-shadow: 3px 3px 5px #000;
 }
 
-.content1 .substance{
+.content_main .substance{
     color: #fff;
     font-size: 15px;
     font-weight: bold;
@@ -266,7 +255,7 @@ main{
     padding: 5px 0 0 15px;
 }
 
-.content1 .substance span{
+.content_main .substance span{
     font-size: 25px;
     color: #F99417;
     font-family: 'hangle_dot';
@@ -282,9 +271,9 @@ main{
 
 /***********************************************************************************************/
 footer{
-    bottom: 100%;
+    background-image : url("/img/bedrock.jpg") ;
+    background-size: 20%;
     padding: 15px;
-    background-color: #714F36;
     width: 100%;
     height: 120px;
     color: #fff;

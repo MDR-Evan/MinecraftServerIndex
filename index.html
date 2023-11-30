@@ -80,22 +80,7 @@
                         <h1>MENU</h1>
                         <ul>
                             <li><a href="#" onclick="openPopup(); return false;">LOGIN</a></li>
-                            <script>
-                                let popupWindow;
                             
-                                function openPopup() {
-                                  // 팝업 창을 연다
-                                  popupWindow = window.open('/login.html', 'login', 'width=800,height=600');
-                                }
-                            
-                                function closePopupAndActivateParent() {
-                                  // 팝업 창을 닫고, 부모 창을 활성화한다
-                                  if (popupWindow && !popupWindow.closed) {
-                                    popupWindow.close();
-                                    window.focus();
-                                  }
-                                }
-                            </script>
                             <li><a href="#" onclick="alert('아직 미구현된 시스템입니다.')">SIGH UP</a></li>
                             
                             <li><a id="checkButton">서버 확인</a></li>
@@ -117,9 +102,10 @@
         </div>
         <!-- 서버 on/offline status -->
     </header>
+    <!----------------------------------------------------------------------------------------------------------->
     <main>
-        <div id="main">
-            <div class="content1">
+        <div id="home">
+            <div class="content_main">
                 <p class="content_title"><span>U</span> <span>D</span>ang <span>T</span>ang <span>T</span>ang</p>
                 <p class="substance">우당탕탕 서버는 어느 새벽에 심심했던 사람들을 위해 오픈 및 운영중인 <span>Minecraft Server</span> 입니다.</p>
             </div>
@@ -139,6 +125,10 @@
                 </p>
             </div>
         </div>
+        <div id="profile"></div>
+        <div id="chat"></div>
+        <div id="map"></div>
+        <div id="mode"></div>
 
     </main>
     <footer>
@@ -151,19 +141,6 @@
             </ul>
         </div>
     </footer>
-
-
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="/js/top_menu.js"></script>
-
-
-
-
-
-
-
 
     <!-- 서버 on/offline 구분 팝업 Season 1-->
     <div class="popup">
@@ -180,23 +157,28 @@
                 <div id="close-icon"><i class="fa-solid fa-xmark"></i></div>
             </div>
         </div>
-        <!-- 서버 on/offline 구분 팝업 -->
-        <!-- 서버 on/offline 구분 팝업 Season 2-->
-        <!-- <div id="wrapper1">
-            <div id="toast1">
-                <div id="content1">
-                    <div id="icon1"><i class="fa-solid fa-spinner"></i></div>
-                    <div id="details1">
-                        <span>Loading...</span>
-                        <p></p>
-                        <script src="/js/LSJ.js"></script>
-                    </div>
-                </div>
-                <div id="close-icon1"><i class="fa-solid fa-xmark"></i></div>
-            </div>
-        </div>
-    </div> -->
-    <!-- 서버 on/offline 구분 팝업 -->
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/js/top_menu.js"></script>
+    <script>
+        let popupWindow;
+    
+        function openPopup() {
+          // 팝업 창을 연다
+          popupWindow = window.open('/login.html', 'login', 'width=800,height=600');
+        }
+    
+        function closePopupAndActivateParent() {
+          // 팝업 창을 닫고, 부모 창을 활성화한다
+          if (popupWindow && !popupWindow.closed) {
+            popupWindow.close();
+            window.focus();
+          }
+        }
+    </script>
 </body>
 
 </html>
