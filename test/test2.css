@@ -12,10 +12,20 @@ body{
     display: none;
   }
 
-  /* 숨김 기본 라디오 버튼 스타일 */
-/* input[type="radio"] {
-    display: none;
-  } */
+/* 숨김 기본 라디오 버튼 스타일 */
+#select input[type="radio"] {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+  
   
   /* 커스텀 라디오 버튼 스타일 */
 input[type="radio"] + label {

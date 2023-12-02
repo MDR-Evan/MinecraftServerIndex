@@ -5,47 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Radio Example</title>
   <style>
-    .content {
-      display: none;
-    }
+    @import url(./test2.css);
   </style>
 </head>
 <body>
 
-  <form>
-    <input type="radio" name="content" value="content1" onclick="showContent('content1')" checked> Content 1
-    <input type="radio" name="content" value="content2" onclick="showContent('content2')"> Content 2
-    <input type="radio" name="content" value="content3" onclick="showContent('content3')"> Content 3
-  </form>
+<div id="select">
+  <input type="radio" id="R1" name="content" value="home" checked>
+  <input type="radio" id="R2" name="content" value="profile">
+  <input type="radio" id="R3" name="content" value="chat">
+</div>
 
-  <div id="content1" class="content">
+<div id="button">
+  <label class="menu" for="R1">HOME</label>
+  <label class="menu" for="R2">Profile</label>
+  <label class="menu" for="R3">chat</label>
+</div>
+
+<div id="contents">
+  <div id="home" class="content">
     <h2>Content 1</h2>
     <p>This is the content for radio button 1.</p>
   </div>
 
-  <div id="content2" class="content">
+  <div id="profile" class="content">
     <h2>Content 2</h2>
     <p>This is the content for radio button 2.</p>
   </div>
 
-  <div id="content3" class="content">
+  <div id="chat" class="content">
     <h2>Content 3</h2>
     <p>This is the content for radio button 3.</p>
   </div>
+</div>
 
-  <script>
-    function showContent(contentId) {
-      // 모든 내용을 숨김
-      var contents = document.getElementsByClassName('content');
-      for (var i = 0; i < contents.length; i++) {
-        contents[i].style.display = 'none';
-      }
-
-      // 선택한 내용을 표시
-      var selectedContent = document.getElementById(contentId);
-      selectedContent.style.display = 'block';
+<script>
+  function showContent(contentId) {
+    // 모든 내용을 숨김
+    var contents = document.getElementsByClassName('content');
+    for (var i = 0; i < contents.length; i++) {
+      contents[i].style.display = 'none';
     }
-  </script>
+
+    // 선택한 내용을 표시
+    var selectedContent = document.getElementById(contentId);
+    selectedContent.style.display = 'block';
+  }
+</script>
 
 </body>
 </html>
