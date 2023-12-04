@@ -16,6 +16,100 @@ body{
 #select input[type="radio"] {
   display: none;
 }
+.navigation { /*컨텐츠 감싸는 요소*/
+  position: relative;
+  width: 400px;
+  height: 70px;
+  background: linear-gradient(45deg, #dd2, #e91e63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 100px 100px;
+}
+.navigation .list {
+  display: flex;
+  width: 350px;
+}
+.navigation .list .menu {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  list-style: none;
+  z-index: 1;
+}
+.navigation .list .menu .pass {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+.navigation.list .menu .pass .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.25em;
+  text-align: center;
+  color: #fff;
+  transition: .5s;
+  transform: translateY(50px);
+}
+
+.navigation .list .menu .pass .text {
+  position: absolute;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.5em;
+  letter-spacing: .05em;
+  opacity: 0;
+  transition: .5s;
+  font-family: 'hangle_dot';
+  opacity: 1;
+}
+
+.navigation .list .menu .pass .circle {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1.8px solid #fff;
+  transform: translateY(50px) scale(1);
+}
+
+/* .indicator {
+  position: absolute;
+  top: 57.5%;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(45deg, #dd2, #e91e63);
+  background-color: #926c4d;
+  border: 6px solid #3e5c20;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+} 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -63,4 +157,3 @@ input[type="radio"]:checked + label:before {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-  

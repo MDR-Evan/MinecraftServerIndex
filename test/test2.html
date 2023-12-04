@@ -6,19 +6,38 @@
   <title>Radio Example</title>
   <style>
     @import url(./test2.css);
-      </style>
+  </style>
+  <script src="https://kit.fontawesome.com/b0ee497627.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+  <body onload="showContent('content1')"></body>
   <form>
-    <input type="radio" name="content" value="content1" onclick="showContent('content1')"> 
-    <input type="radio" name="content" value="content2" onclick="showContent('content2')">
-    <input type="radio" name="content" value="content3" onclick="showContent('content3')">
+    <input type="radio" id="list1" name="content" value="content1" onclick="showContent('content1')" checked> 
+    <input type="radio" id="list2" name="content" value="content2" onclick="showContent('content2')">
+    <input type="radio" id="list3" name="content" value="content3" onclick="showContent('content3')">
   </form>
+
+  <div class="navigation">
+    <label class="list" for="list1">
+      <div class="menu">
+        <div class="pass">
+          <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+          <span class="text">Home</span>
+          <span class="circle"></span>
+        </div>
+        <div class="indicator"></div>
+      </div>
+    </label>
+
+
+
+    <label class="list" for="list2">명령어</label>
+    <label class="list" for="list3">서버설정</label>
+  </div>
 
   <div id="content1" class="content">
     <h2>Content 1</h2>
-    <p>This is the content for radio button 1.</p>.
+    <p>This is the content for radio button 1.</p>
     
   </div>
 

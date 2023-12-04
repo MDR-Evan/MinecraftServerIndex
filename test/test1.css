@@ -10,25 +10,39 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'hangle_dot';
-
 }
 
+body{
+    /* background-color: #61371F; */
+    background-image : url("/img/stone.png") ;
+    background-size: 5%;
+    overflow-x: hidden;
+    height: 10000px;
+}
+
+hr{
+    color:#fff
+}
 #top_menu {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    width: auto;
     height: 70px;
+    background: #3e5c20;
+    background-image : url("/img/grass_block_side.png") ;
+    background-size: 20%;
 }
 .navigation { /*컨텐츠 감싸는 요소*/
     position: relative;
     width: 400px;
     height: 70px;
-    background: linear-gradient(45deg, #dd2, #e91e63);
+    /* background: linear-gradient(45deg, #dd2, #e91e63); */
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-
+    margin: -10px 0;
 }
 .navigation ul {
     display: flex;
@@ -41,7 +55,7 @@
     list-style: none;
     z-index: 1;
 }
-.navigation ul li a  {
+.navigation ul li a {
     position: relative;
     display: flex;
     justify-content: center;
@@ -107,7 +121,30 @@
     align-items: center;
     transition: .5s;
 }
-
+/* .indicator::before {
+    content: '';
+    position: absolute;
+    bottom: 56%;
+    left: 57px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 #363062;
+    transform: rotate(180deg);
+}
+.indicator::after {
+    content: '';
+    position: absolute;
+    bottom: 56%;
+    right: 57px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 #363062;
+    transform: rotate(180deg);
+} */
 .navigation ul li:nth-child(1).active~.indicator {
     transform: translateX(calc(70px * 0));
 }
@@ -123,9 +160,6 @@
 .navigation ul li:nth-child(5).active~.indicator {
     transform: translateX(calc(70px * 4));
 }
-
-
-
 .navigation ul li:nth-child(1).active~main div:nth-child(1),
 .navigation ul li:nth-child(2).active~main div:nth-child(2),
 .navigation ul li:nth-child(3).active~main div:nth-child(3),
@@ -133,7 +167,123 @@
 .navigation ul li:nth-child(5).active~main div:nth-child(5) {
     display: block;
 }
+/* --------------------------------------------------------------------------------- Main munu end ---------------*/
+#title{
+    background-image: url(/img/Menu_img.jpg);
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#title img{
+    height: 75%;
+}
+/* ------------------------------------------------------------------------------------------------------ */
+.user_ckecked{
+    /* background-color: #838587; */
+    /* background-color: #3e5c20; */
+    /* background-color: #926c4d; */
+    background-image : url("/img/background-top.jpg") ;
+    background-size: 30%;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    transition: .2s background-color;
+}
 
-.list input[type=radio] {
-	display: none;
+#status {
+    height: 43px;
+}
+
+#status p {
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 9px;
+    transition: .2s background-color;
+    color: #fff;
+    text-stroke: 1px solid #fff;
+    font-family: 'hangle_dot';
+}
+/************************************************************************************/
+main{
+    margin: 0;
+    padding: 0;
+}
+
+.content_main{
+    margin: 5% 5%;
+    /* background-color: #714F36; */
+    /* background-color: #878787; */
+    background-image : url("/img/cobblestone.jpg") ;
+    background-size: 20%;
+    border-radius: 20px;
+    height: 120px;
+}
+
+.content_main .content_title{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'hangle_dot';
+    font-variant: small-caps;
+    padding: 10px 20px;
+    text-shadow: 3px 3px 5px #000;
+}
+
+.content_main .content_title span{
+    color: #F99417;
+    font-family: 'hangle_dot';
+    text-shadow: 3px 3px 5px #000;
+}
+
+.content_main .substance{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'hangle_dot';
+    font-variant: small-caps;
+    padding: 5px 0 0 15px;
+}
+
+.content_main .substance span{
+    font-size: 25px;
+    color: #F99417;
+    font-family: 'hangle_dot';
+}
+
+.content_mode{
+    margin: 5% 5%;
+    background-image : url("/img/cobblestone.jpg") ;
+    background-size: 20%;
+    border-radius: 20px;
+    height: 210px;
+}
+
+/***********************************************************************************************/
+footer{
+    background-image : url("/img/bedrock.jpg") ;
+    background-size: 20%;
+    padding: 15px;
+    width: 100%;
+    height: 120px;
+    color: #fff;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    font-family: 'hangle_dot';
+    margin: 5px 0;
 }
