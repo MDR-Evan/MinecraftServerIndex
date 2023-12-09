@@ -1,0 +1,77 @@
+/* 기본 css */
+@font-face{font-family: hangle_dot; src: url(/font/neodgm.woff);}  
+*{margin: 0; padding: 0; font-family: hangle_dot;}
+body{background-color: #d55;}
+/* 표시/숨김 css */
+.content{display: none;}
+input[type=radio]{display: none;}
+input[type="radio"]:checked + .BT-inst + .content{display: block;}
+/* container */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* icon css */
+.inputBT{
+    position: relative;
+    margin: 5%;
+    width: 100px;
+    height: 100px;
+}
+.inputBT input{
+    position: absolute;
+    margin: 0;
+
+    cursor: pointer;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+}
+.BT-inst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    border: 2px solid #fff;
+    border-radius: 8px;
+
+    transition: all 300ms ease;
+}
+.BT-inst label{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.BT-inst > label > img{
+    position: absolute;
+    
+    left: 25%;
+    bottom: 35%;
+
+    width: 50%;
+}
+.BT-inst > label > span{
+    position: absolute;
+
+    left: 17%;
+    bottom: 2%;
+}
+/* 체크시 표시 */
+input:checked + .BT-inst{
+    background-color: #2f2f2f;
+    box-shadow: 0 0 12px #f2f2f2;
+}
+input:hover + .BT-inst{
+    box-shadow: 0 0 12px #f2f2f2;
+}
+input:checked + .BT-inst > label > img,
+input:checked + .BT-inst > label > span{
+    color: #d55;
+}
+/* 콘텐츠 표시 */
+.content{background-color: #fff;}

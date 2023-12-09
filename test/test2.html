@@ -10,60 +10,55 @@
   <script src="https://kit.fontawesome.com/b0ee497627.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <body onload="showContent('content1')"></body>
-  <form>
-    <input type="radio" id="list1" name="content" value="content1" onclick="showContent('content1')" checked> 
-    <input type="radio" id="list2" name="content" value="content2" onclick="showContent('content2')">
-    <input type="radio" id="list3" name="content" value="content3" onclick="showContent('content3')">
-  </form>
+  <div class="container">
+    <div class="radio-tile-group">
+        <div class="input-container">
+          <input id="home" type="radio" name="radio">
+          <div class="radio-tile">
+            <img src="/img/Icon/home.png" alt="home">
+            <label for="home">HOME</label>
+          </div>
+          <div class="content">
+            <p>이게 나와야 비정상인디?</p>
+          </div>
+        </div>
 
-  <div class="navigation">
-    <label id="home" class="list" for="list1">
-      <div class="select">
-        <span class="icon"><img src="/img/Icon/home.png"></span>
-        <span class="text">Home</span>
-      </div>
-    </label>
+        <div class="input-container">
+          <input id="profile" type="radio" name="radio">
+          <div class="radio-tile">
+            <img src="/img/Icon/profile.png" alt="profile">
+            <label for="profile">PROFILE</label>
+          </div>
+          <div class="content">
+            <p>이게 나와야 정상인디?</p>
+          </div>
+        </div>
 
-    <label id="profile" class="list" for="list2">
-      <div class="select">
-        <span class="icon"><img src="/img/Icon/profile.png"></span>
-        <span class="text">Profile</span>
-      </div>
-    </label>
-    
-    <label class="list" for="list3">서버설정</label>
+        <div class="input-container">
+          <input id="chat" type="radio" name="radio">
+          <div class="radio-tile">
+            <img src="/img/Icon/chat.png" alt="chat">
+            <label for="chat">CHAT</label>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <input id="map" type="radio" name="radio">
+          <div class="radio-tile">
+            <img src="/img/Icon/map.png" alt="map">
+            <label for="map">MAP</label>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <input id="mode" type="radio" name="radio">
+          <div class="radio-tile">
+            <img src="/img/Icon/mode.png" alt="mode">
+
+            <label for="mode">MODE</label>
+          </div>
+        </div>
+    </div>
   </div>
-
-  <div id="content1" class="content">
-    <h2>Content 1</h2>
-    <p>This is the content for radio button 1.</p>
-    
-  </div>
-
-  <div id="content2" class="content">
-    <h2>Content 2</h2>
-    <p>This is the content for radio button 2.</p>
-  </div>
-
-  <div id="content3" class="content">
-    <h2>Content 3</h2>
-    <p>This is the content for radio button 3.</p>
-  </div>
-
-  <script>
-    function showContent(contentId) {
-      // 모든 내용을 숨김
-      var contents = document.getElementsByClassName('content');
-      for (var i = 0; i < contents.length; i++) {
-        contents[i].style.display = 'none';
-      }
-
-      // 선택한 내용을 표시
-      var selectedContent = document.getElementById(contentId);
-      selectedContent.style.display = 'block';
-    }
-  </script>
-
 </body>
 </html>
