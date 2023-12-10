@@ -1,0 +1,100 @@
+
+
+
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.card {
+  width: 450px;
+  height: 250px;
+  background-color: white;
+  background: linear-gradient(#f8f8f8, white);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 5rem;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+}
+
+.card.jungmin .additional {
+  background: linear-gradient(#ffd752, #ff8400);
+}
+
+.card.jinyong .additional {
+    background: linear-gradient(#ff5252, #ae00ff);
+}
+
+.card.sunmin .additional {
+    background: linear-gradient(#52c8ff, #1b52c2);
+}
+
+.card.jinhyung .additional {
+    background: linear-gradient(#e5ff52, #1bc22e);
+}
+
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general P{
+    font-family: fantasy;
+    text-align: right;
+}
+
+.characterBox{ /*여기 알아서 수정 하면 뎀*/
+    position: absolute;
+    top: 110px;
+    left: 35px;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+}
