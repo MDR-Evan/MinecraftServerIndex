@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Minecraft 서버의 주소와 포트를 설정합니다.
-    const serverAddress = '58.228.170.152';
+    const serverAddress = '218.232.210.31';
     const serverPort = 25565;
     // const serverAddress = 'pixel.agpk.kr';
 
@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 const statusElement = document.getElementById('wrapper');
+                title.style.fontFamily='hangle_dot';
+                subTitle.style.fontFamily='hangle_dot';
                 if (data.online) {
                     toast.classList.add("online");
                     toast.classList.remove("offline");

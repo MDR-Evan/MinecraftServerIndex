@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/login.css">
-    <script src="./script/"></script>
 </head>
 <body>
     <span class="subtitle">로그인하시죠<strong>?!</strong></span>
@@ -21,12 +20,17 @@
         </div>
         <div class="stick_menu2">
             <a href="#">
-                <div class="mineLG">
+                <div class="mineLG" onclick="btnMinecraft_login()">
                     login
+                    <script>
+                        function btnMinecraft_login() {
+                            window.opener.closePopupAndActivateParent();
+                        }
+                    </script>
                 </div>
             </a>
             <a href="#">
-                <div class="mineSU">
+                <div class="mineSU" onclick="alert('아직 미구현된 시스템입니다.')">
                     Sign up
                 </div>
             </a>

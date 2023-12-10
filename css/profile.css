@@ -1,5 +1,7 @@
-
-
+@font-face {
+  font-family: hangle_dot;
+  src: url(/font/neodgm.woff);
+}
 
 .center {
   display: flex;
@@ -82,7 +84,7 @@
 }
 
 .card .general P{
-    font-family: fantasy;
+    font-family: 'hangle_dot';
     text-align: right;
 }
 

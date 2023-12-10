@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우당탕탕 마인크랴프트 서버</title>
+    <style>
+        @import url(/css/index.css);
+        @import url(/css/popup.css);
+        @import url(/css/top_tab.css);
+    </style>
+    <script src="https://kit.fontawesome.com/b0ee497627.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="top_menu">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">Home</span>
+                            <span class="circle"></span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </span>
+                            <span class="text">Profile</span>
+                            <span class="circle"></span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="chatbubble-outline"></ion-icon>
+                            </span>
+                            <span class="text">Message</span>
+                            <span class="circle"></span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="camera-outline"></ion-icon>
+                            </span>
+                            <span class="text">Mab</span>
+                            <span class="circle"></span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a>
+                            <span class="icon">
+                                <ion-icon name="settings-outline"></ion-icon>
+                            </span>
+                            <span class="text">Mode</span>
+                            <span class="circle"></span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+
+            <label>
+                <div id="top_tab">
+                    <input type="checkbox">
+                    <div class="toggle">
+                        <span class="top_line common"></span>
+                        <span class="middle_line common"></span>
+                        <span class="bottom_line common"></span>
+                        </div>
+                    <div class="slide">
+                        <h1>MENU</h1>
+                        <ul>
+                            <li><a href="#" onclick="openPopup(); return false;">LOGIN</a></li>
+                            
+                            <li><a href="#" onclick="alert('아직 미구현된 시스템입니다.')">SIGH UP</a></li>
+                            
+                            <li><a id="checkButton">서버 확인</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </label>
+        </div>
+<!-----------------------------------------------------------------------top_meun-------------------------------------->
+        <div id="title">
+            <img src="/img/title.png" alt="title">
+        </div>
+        <!-- 서버 on/offline status -->
+        <div class="user_ckecked">
+            <div id="status">
+                <p>로딩중...</p>
+                <script src="js/server_checked.js"></script>
+            </div>
+        </div>
+        <!-- 서버 on/offline status -->
+    </header>
+    <!----------------------------------------------------------------------------------------------------------->
+    <main>
+        <div id="home">
+            <div class="content_main">
+                <p class="content_title"><span>U</span> <span>D</span>ang <span>T</span>ang <span>T</span>ang</p>
+                <p class="substance">우당탕탕 서버는 어느 새벽에 심심했던 사람들을 위해 오픈 및 운영중인 <span>Minecraft Server</span> 입니다.</p>
+            </div>
+            <br>
+            <div class="content_mode">
+                <p>MODE</p>
+                <p>컨텐츠</p>
+                <p>컨텐츠</p>
+                <p>컨텐츠</p>
+                <p>컨텐츠</p>
+            </div>
+
+            <br>
+
+            <div>
+                <p>메뉴바? 하나더?
+                </p>
+            </div>
+        </div>
+        <div id="profile"></div>
+        <div id="chat"></div>
+        <div id="map"></div>
+        <div id="mode"></div>
+
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li>(우) 12133 / 경기도 남양주시 진건읍 사릉로424</li>
+                <li>TEL : 010-9642-1668</li>
+                <li>E-mail : kjy040216@kbu.ac.kr</li>
+                <li>Copyright 2023 KJY. All Reserved.</li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- 서버 on/offline 구분 팝업 Season 1-->
+    <div class="popup">
+        <div id="wrapper">
+            <div id="toast">
+                <div id="content">
+                    <div id="icon"><i class="fa-solid fa-spinner"></i></div>
+                    <div id="details">
+                        <span>Loading...</span>
+                        <p></p>
+                        <script src="/js/OJM.js"></script>
+                    </div>
+                </div>
+                <div id="close-icon"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/js/top_menu.js"></script>
+    <script>
+        let popupWindow;
+    
+        function openPopup() {
+          // 팝업 창을 연다
+          popupWindow = window.open('/login.html', 'login', 'width=800,height=600');
+        }
+    
+        function closePopupAndActivateParent() {
+          // 팝업 창을 닫고, 부모 창을 활성화한다
+          if (popupWindow && !popupWindow.closed) {
+            popupWindow.close();
+            window.focus();
+          }
+        }
+    </script>
+</body>
+
+</html>

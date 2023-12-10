@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Minecraft 서버의 주소와 포트를 설정합니다.
     // 오정민
-    const serverAddress = '58.228.170.1521'; 
+    const serverAddress = '218.232.210.31'; 
     // 이순주
     // const serverAddress = '210.221.63.232'; 
     const serverPort = 25565;
@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 const statusElement = document.getElementById('status'); // 수정된 부분: statusElements -> statusElement
+                statusElement.style.fontFamily='hangle_dot';
                 if (data.online) {
                     statusElement.textContent =`${data.players.online}명의 유저가 접속 중 입니다.`;
                     //  / ${data.players.max}
@@ -33,8 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     statusElement.style.display = 'grid';
                     statusElement.style.placeContent = 'center';    
                     statusElement.style.textAlign = 'center';
-                    statusElement.style.padding_top = '5px';
-                    
                 }
             })
             .catch(error => {

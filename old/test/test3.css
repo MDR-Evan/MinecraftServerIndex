@@ -76,8 +76,7 @@ input:checked + .BT-inst > label > span{
 /* 콘텐츠 표시 */
 .content{
     position: relative;
-    margin: 10% 0;
-    top: 5%;
+    margin: 50% 0;
 
     background-color: #fff;
 }

@@ -1,135 +1,200 @@
 <!DOCTYPE html>
-<html lang="kr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>우당탕탕 마인크랴프트 서버</title>
-    <style>
-        @import url(/css/index.css);
-        @import url(/css/popup.css);
-        @import url(/css/top_tab.css);
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/profile.css">
     <script src="https://kit.fontawesome.com/b0ee497627.js" crossorigin="anonymous"></script>
 </head>
-
-<body>
-    <header>
-        <div id="top_menu">
-            <div class="navigation">
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <label>
+        <div id="top_tab">
+            <input type="checkbox">
+            <div class="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+                </div>
+            <div class="slide">
+                <h1>MENU</h1>
                 <ul>
-                    <li class="list active">
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="home-outline"></ion-icon>
-                            </span>
-                            <span class="text">Home</span>
-                            <span class="circle"></span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="person-outline"></ion-icon>
-                            </span>
-                            <span class="text">Profile</span>
-                            <span class="circle"></span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="chatbubble-outline"></ion-icon>
-                            </span>
-                            <span class="text">Message</span>
-                            <span class="circle"></span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="camera-outline"></ion-icon>
-                            </span>
-                            <span class="text">Mab</span>
-                            <span class="circle"></span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a>
-                            <span class="icon">
-                                <ion-icon name="settings-outline"></ion-icon>
-                            </span>
-                            <span class="text">Mode</span>
-                            <span class="circle"></span>
-                        </a>
-                    </li>
-                    <div class="indicator"></div>
+                    <li><a href="#" onclick="openPopup(); return false;">LOGIN</a></li>
+                    <script>
+                        let popupWindow;
+                    
+                        function openPopup() {
+                          popupWindow = window.open('./Login/login.html', 'login', 'width=1200,height=800');
+                        }
+                        function closePopupAndActivateParent() {
+                          if (popupWindow && !popupWindow.closed) {
+                            popupWindow.close();
+                            window.focus();
+                          }
+                        }
+                    </script>
+                    <li><a href="#" onclick="alert('아직 미구현된 시스템입니다.')">SIGH UP</a></li>
+                    <li><a id="checkButton">서버 확인</a></li>
                 </ul>
             </div>
-
-            <label>
-                <div id="top_tab">
-                    <input type="checkbox">
-                    <div class="toggle">
-                        <span class="top_line common"></span>
-                        <span class="middle_line common"></span>
-                        <span class="bottom_line common"></span>
+        </div>
+    </label>
+    <div class="logo">
+        <img src="./img/title.png" alt="">
+    </div>
+    <main>
+        <div class="grass">
+            <div class="user_ckecked">
+                <div id="status">
+                    <p>로딩중...</p>
+                    <script src="./js/server_checked.js"></script>
+                </div>
+            </div>
+            <div class="list">
+                <script src="./js/index.js"></script>
+                <input id="home" type="radio" name="body_list" checked>
+                <input id="profile" type="radio" name="body_list">
+                <input id="map" type="radio"  name="body_list">
+                <input id="mods" type="radio"  name="body_list">
+                <div class="Text_list">
+                    <label class="left_list" for="home">
+                        <span class="label-text">Home</span>
+                        <img src="./img/icon/home.png" alt="">
+                    </label>
+                    <label class="left_list">
+                        <img src="./img/icon/item_3.png" alt="" width="70px" height="70px">
+                    </label>
+                    <label class="left_list" for="profile">
+                        <span class="label-text">Profile</span>
+                        <img src="./img/icon/info.png" alt="">
+                    </label>
+                    <label class="left_list">
+                        <img src="./img/icon/item_3.png" alt="" width="70px" height="70px">
+                    </label>
+                    <label class="left_list" for="map">
+                        <span class="label-text">Map</span>
+                        <img src="./img/icon/map.png" alt="">
+                    </label>
+                    <label class="left_list">
+                        <img src="./img/icon/item_3.png" alt="" width="70px" height="70px">
+                    </label>
+                    <label class="left_list" for="mods">
+                        <span class="label-text">Mods</span>
+                        <img src="./img/icon/mods.png" alt="">
+                    </label>
+                </div>
+                
+                <div class="list_pages">
+                    <div class="home">
+                        <div class="box">
+                            <div class="content1">
+                            <p class="content_title"><span>U</span> <span>D</span>ang <span>T</span>ang <span>T</span>ang</p>
+                            <p class="substance">우당탕탕 서버는 어느 새벽에 심심했던 사람들을 위해 오픈 및 운영중인 <span>Minecraft Server</span> 입니다.</p>
                         </div>
-                    <div class="slide">
-                        <h1>MENU</h1>
-                        <ul>
-                            <li><a href="#" onclick="openPopup(); return false;">LOGIN</a></li>
-                            
-                            <li><a href="#" onclick="alert('아직 미구현된 시스템입니다.')">SIGH UP</a></li>
-                            
-                            <li><a id="checkButton">서버 확인</a></li>
-                        </ul>
+
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="box">
+                            <div class="center">
+                                <div class="card jungmin">
+                                    <div class="additional">
+                                        <div class="user-card">
+                                            <div class="level center">
+                                                Level 9
+                                            </div>
+                                            <div class="characterBox">
+                                                여따 집어넣어
+                                            </div>
+                                            <div class="points center">
+                                                2,549 Points
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="general">
+                                        <h1>Nyako</h1>
+                                        <p>다이아를 캐는 능력이 출중하다<br> 암튼 일단 들이 받고 보는 편<br>
+                                        어려운 코드(API) 가져오는 역할<br>암튼 해줘 하면 해줬다<br>멋찐녀석</p>
+                                        <span class="more">2301125 오정민</span>
+                                    </div>
+                                </div>
+                                <div class="card jinyong">
+                                    <div class="additional">
+                                        <div class="user-card">
+                                            <div class="level center">
+                                                Level 9
+                                            </div>
+                                            <div class="characterBox">
+                                                여따 집어넣어
+                                            </div>
+                                            <div class="points center">
+                                                2,549 Points
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="general">
+                                        <h1>kjy_eva</h1>
+                                        <p>상당한 <span style="color: #fa2;">금쪽이</span>며,<br>사람을 자주 패고 다닌다<br>하는건 없는데 해달라는 게 많다<br>
+                                        공장장장이다. &nbsp;역시 기술쪽 출신<br>코드 수정은 암튼 얘가 했다<br>CSS도 얘가 만졌다</p>
+                                        <span class="more">2301111 김진용</span>
+                                    </div>
+                                </div>
+                                <div class="card sunmin">
+                                    <div class="additional">
+                                        <div class="user-card">
+                                            <div class="level center">
+                                                Level 9
+                                            </div>
+                                            <div class="characterBox">
+                                                여따 집어넣어
+                                            </div>
+                                            <div class="points center">
+                                                2,549 Points
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="general">
+                                        <h1>GunJJu</h1>
+                                        <p>입력</p>
+                                        <span class="more"> 김선민</span>
+                                    </div>
+                                </div>
+                                <div class="card jinhyung">
+                                    <div class="additional">
+                                        <div class="user-card">
+                                            <div class="level center">
+                                                Level 9
+                                            </div>
+                                            <div class="characterBox">
+                                                여따 집어넣어
+                                            </div>
+                                            <div class="points center">
+                                                2,549 Points
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="general">
+                                        <h1>GunJJu</h1>
+                                        <p>입력</p>
+                                        <span class="more"> 김선민</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <div class="box">
+                            <p style="text-align: center;"><iframe src="http://58.228.170.152:8123/" frameborder="0"></iframe></p>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        
                     </div>
                 </div>
-            </label>
-        </div>
-<!-----------------------------------------------------------------------top_meun-------------------------------------->
-        <div id="title">
-            <img src="/img/title.png" alt="title">
-        </div>
-        <!-- 서버 on/offline status -->
-        <div class="user_ckecked">
-            <div id="status">
-                <p>로딩중...</p>
-                <script src="js/server_checked.js"></script>
             </div>
         </div>
-        <!-- 서버 on/offline status -->
-    </header>
-    <!----------------------------------------------------------------------------------------------------------->
-    <main>
-        <div id="home">
-            <div class="content_main">
-                <p class="content_title"><span>U</span> <span>D</span>ang <span>T</span>ang <span>T</span>ang</p>
-                <p class="substance">우당탕탕 서버는 어느 새벽에 심심했던 사람들을 위해 오픈 및 운영중인 <span>Minecraft Server</span> 입니다.</p>
-            </div>
-            <br>
-            <div class="content_mode">
-                <p>MODE</p>
-                <p>컨텐츠</p>
-                <p>컨텐츠</p>
-                <p>컨텐츠</p>
-                <p>컨텐츠</p>
-            </div>
-
-            <br>
-
-            <div>
-                <p>메뉴바? 하나더?
-                </p>
-            </div>
-        </div>
-        <div id="profile"></div>
-        <div id="chat"></div>
-        <div id="map"></div>
-        <div id="mode"></div>
-
     </main>
     <footer>
         <div>
@@ -151,34 +216,14 @@
                     <div id="details">
                         <span>Loading...</span>
                         <p></p>
-                        <script src="/js/OJM.js"></script>
+                        <script src="./js/OJM.js"></script>
                     </div>
                 </div>
                 <div id="close-icon"><i class="fa-solid fa-xmark"></i></div>
             </div>
         </div>
-
-
-
+    </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="/js/top_menu.js"></script>
-    <script>
-        let popupWindow;
-    
-        function openPopup() {
-          // 팝업 창을 연다
-          popupWindow = window.open('/login.html', 'login', 'width=800,height=600');
-        }
-    
-        function closePopupAndActivateParent() {
-          // 팝업 창을 닫고, 부모 창을 활성화한다
-          if (popupWindow && !popupWindow.closed) {
-            popupWindow.close();
-            window.focus();
-          }
-        }
-    </script>
 </body>
-
 </html>
