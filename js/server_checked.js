@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const serverAddress = '58.228.170.152'; 
+    // const serverAddress = '58.228.170.152'; 
+    const serverAddress = '192.168.247.91'
     const serverPort = 25565;
 
     // Minecraft 서버 상태를 확인하는 함수
