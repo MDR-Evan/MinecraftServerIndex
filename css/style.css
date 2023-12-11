@@ -10,7 +10,9 @@
     font-family: 'hangle_dot';
     -ms-overflow-style: none;
 }
-
+body{
+    height: 100%;
+}
 body::-webkit-scrollbar {
     display: none;
 }
@@ -18,6 +20,7 @@ body::-webkit-scrollbar {
 html {
     background-image: url(../img/stone.png);
     background-size: 800px;
+    height: auto;
 }
 
 /* 버튼 점 제거*/
@@ -459,15 +462,16 @@ html {
 }
 /***********************************************************************************************/
 main{
-    margin-bottom: 48%;
+    
 }
 footer{
     background-image : url("/img/bedrock.jpg") ;
     background-size: 20%;
-    margin-bottom: 1;
     width: 100%;
     height: 120px;
     color: #fff;
+    position: relative;
+    top: 1000px;
 }
 
 footer ul{
@@ -482,7 +486,9 @@ footer ul li{
 /* 홀로 외로워하는 다이나믹맵 */
 
 iframe {
-    width: 1800px;
+    /* width: 1800px;
+    height: 800px; */
+    width: 100%;
     height: 800px;
 }
 

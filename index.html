@@ -10,40 +10,42 @@
     <script src="https://kit.fontawesome.com/b0ee497627.js" crossorigin="anonymous"></script>
 </head>
 <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
-    <label>
-        <div id="top_tab">
-            <input type="checkbox">
-            <div class="toggle">
-                <span class="top_line common"></span>
-                <span class="middle_line common"></span>
-                <span class="bottom_line common"></span>
+    <header>
+        <label>
+            <div id="top_tab">
+                <input type="checkbox">
+                <div class="toggle">
+                    <span class="top_line common"></span>
+                    <span class="middle_line common"></span>
+                    <span class="bottom_line common"></span>
+                    </div>
+                <div class="slide">
+                    <h1>MENU</h1>
+                    <ul>
+                        <li><a href="#" onclick="openPopup(); return false;">LOGIN</a></li>
+                        <script>
+                            let popupWindow;
+                        
+                            function openPopup() {
+                            popupWindow = window.open('./Login/login.html', 'login', 'width=1200,height=800');
+                            }
+                            function closePopupAndActivateParent() {
+                            if (popupWindow && !popupWindow.closed) {
+                                popupWindow.close();
+                                window.focus();
+                            }
+                            }
+                        </script>
+                        <li><a href="#" onclick="alert('아직 미구현된 시스템입니다.')">SIGH UP</a></li>
+                        <li><a id="checkButton">서버 확인</a></li>
+                    </ul>
                 </div>
-            <div class="slide">
-                <h1>MENU</h1>
-                <ul>
-                    <li><a href="#" onclick="openPopup(); return false;">LOGIN</a></li>
-                    <script>
-                        let popupWindow;
-                    
-                        function openPopup() {
-                          popupWindow = window.open('./Login/login.html', 'login', 'width=1200,height=800');
-                        }
-                        function closePopupAndActivateParent() {
-                          if (popupWindow && !popupWindow.closed) {
-                            popupWindow.close();
-                            window.focus();
-                          }
-                        }
-                    </script>
-                    <li><a href="#" onclick="alert('아직 미구현된 시스템입니다.')">SIGH UP</a></li>
-                    <li><a id="checkButton">서버 확인</a></li>
-                </ul>
             </div>
+        </label>
+        <div class="logo">
+            <img src="./img/title.png" alt="">
         </div>
-    </label>
-    <div class="logo">
-        <img src="./img/title.png" alt="">
-    </div>
+    </header>
     <main>
         <div class="grass">
             <div class="user_ckecked">
