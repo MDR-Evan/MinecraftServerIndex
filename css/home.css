@@ -30,4 +30,11 @@
     font-size: 25px;
     color: #F99417;
 }
+.screenshot {
+    width: 500px;
+    margin: 20px;
+}
 
+.center {
+    text-align: center;
+}

@@ -90,8 +90,7 @@
 
 .characterBox{ /*여기 알아서 수정 하면 뎀*/
     position: absolute;
-    top: 110px;
-    left: 35px;
+    top: 30px;
 }
 
 .card .general .more {
